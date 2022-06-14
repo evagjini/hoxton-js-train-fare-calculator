@@ -19,7 +19,7 @@ let taxOver65 =  0.4
 
 
   if (age <=18){ 
-      const discountPrice = basicPrice - (taxUnder18*basicPrice)
+    discountPrice = basicPrice - (taxUnder18*basicPrice)
 }
    
 else if (age>=65){
@@ -37,13 +37,13 @@ console.log( discountPrice)
 
 
 console.log(`
-    Price : ${pricePerTravelKm.toFixed(2)}£ 
+   overall Price : ${pricePerTravelKm.toFixed(2)}£ 
    
 
     Discount Price:
     
-    - Passager Under 18 : ${taxUnder18.toFixed(2)}£ 
-    - Passager Over 65: ${taxOver65.toFixed(2)}£ 
-
+    - Juniors Passager : ${taxUnder18.toFixed(2)}£ 
+    -  Senior Passager : ${taxOver65.toFixed(2)}£ 
+    -  Passagers Between 19-64: ${pricePerTravelKm.toFixed(2)}£ 
 
 `)
