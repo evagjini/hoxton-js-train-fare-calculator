@@ -20,31 +20,33 @@ let discountPrice;
   if (age <=18){ 
 
     discountPrice = basicPrice - (taxUnder18*basicPrice)
-
+    console.log("You will pay :"  + "£ " + discountPrice)
 }
    
 else if (age>=65){
 
       discountPrice = basicPrice -(taxOver65*basicPrice)
+      console.log("You will pay :"  + "£ " + discountPrice)
 
     }
 
      else {
       discountPrice = pricePerTravelKm
+      console.log("You will pay :"  + "£ " + discountPrice)
     } 
 
 
 console.log(discountPrice)
 
 
-console.log(`
-   overall Price : ${pricePerTravelKm.toFixed(2)}£ 
+// console.log(`
+//    overall Price : ${pricePerTravelKm.toFixed(2)}£ 
    
 
-    Discount Price:
+//     Discount Price:
     
-    - Juniors Passager : ${taxUnder18.toFixed(2)}£ 
-    -  Senior Passager : ${taxOver65.toFixed(2)}£ 
-    -  Passagers Between 19-64: ${pricePerTravelKm.toFixed(2)}£ 
+//     - Juniors Passager : ${taxUnder18.toFixed(2)}£ 
+//     -  Senior Passager : ${taxOver65.toFixed(2)}£ 
+//     -  Passagers Between 19-64: ${pricePerTravelKm.toFixed(2)}£ 
 
-`)
+// `)
