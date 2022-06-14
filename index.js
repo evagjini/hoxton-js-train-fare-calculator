@@ -12,8 +12,8 @@ let basicPrice = pricePerTravelKm*distance
 
 // calculating discount price 
 
-let taxUnder18 = 0.8
-let taxOver65 =  0.6
+let taxUnder18 = 0.2
+let taxOver65 =  0.4
 
 let discountPrice;
 
