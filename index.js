@@ -1,7 +1,6 @@
 
 
 let age = Number(promt("What's your age?"))
- 
 let distance = Number(promt("How far are you traveling?"))
 
 
@@ -16,24 +15,26 @@ let basicPrice = pricePerTravelKm*distance
 let taxUnder18 = 0.2
 let taxOver65 =  0.4
 
-
+let discountPrice;
 
   if (age <=18){ 
+
     discountPrice = basicPrice - (taxUnder18*basicPrice)
+
 }
    
 else if (age>=65){
 
-        const discountPrice = basicPrice -(taxOver65*basicPrice)
+      discountPrice = basicPrice -(taxOver65*basicPrice)
 
     }
 
      else {
-    const discountPrice = pricePerTravelKm
+      discountPrice = pricePerTravelKm
     } 
 
 
-console.log( discountPrice)
+console.log(discountPrice)
 
 
 console.log(`
