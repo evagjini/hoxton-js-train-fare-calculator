@@ -1,7 +1,7 @@
 
 
-let age = Number(promt("What's your age?"))
-let distance = Number(promt("How far are you traveling?"))
+let age = Number(prompt("What's your age?"))
+let distance = Number(prompt("How far are you traveling?"))
 
 
 
